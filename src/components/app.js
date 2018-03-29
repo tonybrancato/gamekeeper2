@@ -1,11 +1,14 @@
 import React from 'react';
-import LandingPage from './landingpage';
+
+import Games from './games';
 
 
 export default class App extends React.Component {
   render() {
     return (
-      <LandingPage />
+      <div className="games">
+        <Games />
+      </div>
     );
   }
 }
