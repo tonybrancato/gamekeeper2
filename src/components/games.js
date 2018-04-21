@@ -6,13 +6,11 @@ export class Games extends React.Component {
   render() {
     const allGames = (this.props.games).map((game, index) => {
       return (
-        <div className="gamekeeper-intro">
           <GameCard 
             name={game.name}
             type={game.type}
             players={game.players}
           />  
-        </div>
       );
     })
     return (
