@@ -9,6 +9,8 @@ export class Games extends React.Component {
         <div className="gamekeeper-intro">
           <GameCard 
             name={game.name}
+            type={game.type}
+            players={game.players}
           />  
         </div>
       );
