@@ -1,6 +1,7 @@
 import React from 'react';
 import './gamecard.css';
-import Rating from './rating'
+import Rating from './rating';
+import GameModal from './game-modal';
 
 // pass props 
 export default class GameCard extends React.Component {
@@ -16,6 +17,11 @@ export default class GameCard extends React.Component {
         <h3>{players} players</h3>
       </div>
         <Rating />
+        <GameModal 
+          name={name}
+          type={type}
+          players={players}
+        />
       </div>
     )
   }
